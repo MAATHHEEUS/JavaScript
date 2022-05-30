@@ -1,3 +1,10 @@
 Video 3: links de livros referência
     - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
     - https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
+
+Video 6: Converção de dados
+    - de String para Number e vice versa
+    - `` uso de crase e ${} para Strings formatadas
+    - método para transformar em valor monetário: n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+video 7: 
