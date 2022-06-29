@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercio 01</title>
+    <style>
+        body{
+            background-color: aqua;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        main{
+            background-color: aliceblue;
+            padding: 15px;
+            width: 600px;
+            margin: auto;
+            color: black;
+        }
+        img{
+            width: 400px;
+            height: 250px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hora do dia</h1>
+    <main>
+        <h2 id="hora"><!--Hora do dia--></h2>
+        <img id="imagem" src="https://i.pinimg.com/236x/ea/76/11/ea761156ba76b867ed12a76a566b4da5.jpg" alt="amanhacer">
+    </main>
+    <script>
+        var data = new Date
+        var horas = data.getHours()
+        if(horas < 12) {
+            var hora = document.getElementById('hora')
+            hora.innerHTML = `São ${horas} horas`
+            document.body.style.background = 'green'
+            document.body.main.style.img = 'https://i.pinimg.com/236x/ea/76/11/ea761156ba76b867ed12a76a566b4da5.jpg'
+        }else if(horas < 18) {
+            document.body.style.background = 'yellow'
+            var hora = document.getElementById('hora')
+            hora.innerHTML = `São ${horas} horas`
+            var imagem = document.getElementById('imagem')
+            imagem.src = 'https://i0.wp.com/emotioncard.com.br/wp-content/uploads/2017/07/mensagens-de-boa-tarde-ka0z3-fxl.jpg?fit=1120%2C588&ssl=1'
+        }else {            
+            hora = document.getElementById('hora')
+            hora.innerHTML = `São ${horas} horas`
+            document.body.style.background = 'black'
+            var imagem = document.getElementById('imagem')
+            imagem.src = 'https://st2.depositphotos.com/4404267/6487/i/450/depositphotos_64872759-stock-photo-full-moon-in-night-sky.jpg'
+        }
+    </script>
+</body>
+</html>
