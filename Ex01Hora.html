@@ -35,10 +35,10 @@
         var data = new Date
         var horas = data.getHours()
         if(horas < 12) {
-            var hora = document.getElementById('hora')
+            var hora = document.getElementById('hora')//pega o titulo h2
             hora.innerHTML = `São ${horas} horas`
             document.body.style.background = 'green'
-            document.body.main.style.img = 'https://i.pinimg.com/236x/ea/76/11/ea761156ba76b867ed12a76a566b4da5.jpg'
+            document.body.main.style.img = 'https://i.pinimg.com/236x/ea/76/11/ea761156ba76b867ed12a76a566b4da5.jpg'//vai até o elemento img
         }else if(horas < 18) {
             document.body.style.background = 'yellow'
             var hora = document.getElementById('hora')
